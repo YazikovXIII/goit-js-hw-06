@@ -30,9 +30,11 @@ const list = document.querySelector(".gallery")
 // console.log(list);
 const markup = images.map(({ url, alt }) =>
   `<li>
-    <img src="${url}" alt="${alt}" class="some-image" width="900px"></img>
+    <img src="${url}" alt="${alt}" width="900px"></img>
   </li>`
-)
+).join('')
 console.log(markup);
+
+
 list.insertAdjacentHTML("afterbegin", markup)
 list.style.cssText = 'display: flex;align-items: center;flex-direction: column;list-style: none;';
