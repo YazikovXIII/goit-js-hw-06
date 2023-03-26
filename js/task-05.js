@@ -12,5 +12,5 @@ function onInput(event) {
         return 
     }
 
-        outputName.textContent = 'Anonymous'
+    outputName.textContent = 'Anonymous'
 }
