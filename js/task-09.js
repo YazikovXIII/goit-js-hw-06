@@ -9,7 +9,10 @@ const colorId = document.querySelector('.color')
 const btnCntrl = document.querySelector('.change-color')
 btnCntrl.addEventListener('click', onClick)
 
+
 function onClick(event) {
-  back.style.backgroundColor = getRandomHexColor();
-  colorId.textContent = getRandomHexColor()
+  const randomClr = getRandomHexColor()
+  back.style.backgroundColor = randomClr;
+  colorId.textContent = randomClr;
+  console.log(randomClr);
 }
